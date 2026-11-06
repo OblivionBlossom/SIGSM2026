@@ -40,6 +40,8 @@ Sigue estos pasos para tener el proyecto en tu computadora:
 4. Asegúrate de tener instalado XAMPP 8.x en tu computadora.
 5. Copia la carpeta descomprimida dentro de la carpeta **`htdocs`** de XAMPP.
 
+Consulta nuestro [Manual de Instalación Completo (PDF)] si necesitas una guía detallada de configuración y resolución de problemas (./Manual%20de%20instalación%20-%20S.I.G.S.M..pdf) disponible en este repositorio.
+
 ## Pasos para el uso
 
 Para ver la página web en funcionamiento:
