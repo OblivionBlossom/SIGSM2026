@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <label class="form-label text-dark fw-bold small">Contraseña</label>
                             <input type="password" id="pass" name="Pass" maxlength="20" class="form-control bg-info-subtle text-muted">
                             <div class="form-check mt-2">
-                                //el checkbox cambia el tipo del input para mostrar u ocultar la contraseña
+                                <!--el checkbox cambia el tipo del input para mostrar u ocultar la contraseña-->
                                 <input class="form-check-input" type="checkbox" id="verPass" onchange="document.getElementById('pass').type = this.checked ? 'text' : 'password';">
                                 <label class="form-check-label small text-muted" for="verPass">Mostrar contraseña</label>
                             </div>
