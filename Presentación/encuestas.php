@@ -42,11 +42,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </div>
         <div class="col-md-10">
-            //el id lo usa validaciones.js para controlar el envío
+            <!--el id lo usa validaciones.js para controlar el envío-->
             <form id="formRespuestas" action="" method="POST">
                 <?php 
                  // se muestran las preguntas agrupadas por tema, con sus estrellas
-                    include_once 'Tarjetas.php';
+                    include_once 'tarjetas.php';
                     TarjetasPreguntasUsu::mostrar(); 
                 ?>
               <div class="text-center mt-4">
