@@ -89,7 +89,7 @@ $idOriginal = "";
                     <span class="text-dark fw-bold fs-5">Encuestas</span>
                 </div>
                 <?php if ($esAdmin) { ?>
-                //la opción de alta de usuarios solo aparece para administradores
+                <!--la opción de alta de usuarios solo aparece para administradores-->
                 <div class="<?php echo $columna; ?>">
                     <a class="btn btn-link text-dark text-decoration-none fw-medium" href="formUsuarios.php">Alta de usuarios</a>
                 </div>
@@ -115,13 +115,13 @@ $idOriginal = "";
                 <h4 class="fw-bold mb-4" style="font-family: serif;">Editar preguntas:</h4>
                 <?php 
                     // listado con las preguntas ya cargadas y sus botones de editar y eliminar
-                    include 'Tarjetas.php';
+                    include 'tarjetas.php';
                     TarjetasPreguntasAdmin::mostrar(); 
                 ?>
             </div>
             <div class="col-md-5">
                 <div class="border p-4 rounded bg-white shadow-sm">
-                    //el título y el texto del botón cambian según se esté creando o editando
+                    <!--el título y el texto del botón cambian según se esté creando o editando-->
                     <h4 class="fw-bold mb-4" style="font-family: serif;"><?php echo $textoTituloPagina; ?></h4>
                     <form id="formPreguntas" action="" method="POST">
                         <div class="mb-3">
