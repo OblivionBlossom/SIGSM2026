@@ -15,7 +15,7 @@ class TarjetasDocumentos {
                 $categoria  = $fila['Categoria'] ?? '';
 ?>
             
-                //data-categoria es lo que lee el js para filtrar, y el h5 es el texto que usa el buscador 
+                <!--data-categoria es lo que lee el js para filtrar, y el h5 es el texto que usa el buscador-->
                 <div class="card bg-body-secondary border-0 p-3 mb-2 tarjeta-documento" data-categoria="<?php echo htmlspecialchars($categoria); ?>" style="max-width: 600px;">
                     <div class="d-flex align-items-start">
                         <i class="bi bi-file-earmark fs-1 me-3 text-dark"></i>
@@ -27,7 +27,7 @@ class TarjetasDocumentos {
                                 <span class="small fw-bold" style="color: #4682B4;"><?php echo $tipoDoc; ?></span>
                                 <div class="d-flex gap-3">
                                     <?php if ($es_admin == true) { ?>
-                                        //urlencode porque el nombre puede tener espacios o acentos
+                                        <!--urlencode porque el nombre puede tener espacios o acentos-->
                                         <a href="?eliminar=<?php echo urlencode($nombreDoc); ?>" class="text-danger fs-4" title="Eliminar" onclick="return confirm('¿Estás seguro de eliminar este documento?');">
                                             <i class="bi bi-trash"></i>
                                         </a>
@@ -133,7 +133,7 @@ class TarjetasPreguntasUsu {
                     <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
                         <span class="small text-muted text-end" style="width: 110px;">En desacuerdo</span>
 
-                        //cada estrella tiene su valor, y estrellas.js lo guarda en el input de abajo
+                        <!-- cada estrella tiene su valor, y estrellas.js lo guarda en el input de abajo-->
                         <div class="d-flex gap-3 fs-2 text-warning contenedor-estrellas">
                             <i class="bi bi-star cursor-pointer estrella" data-valor="1"></i>
                             <i class="bi bi-star cursor-pointer estrella" data-valor="2"></i>
@@ -145,7 +145,7 @@ class TarjetasPreguntasUsu {
                         <span class="small text-muted text-start" style="width: 110px;">De acuerdo</span>
                     </div>
 
-                    //el nombre del input arma el array respuesta[idPregunta] que lee el controlador
+                    <!-- el nombre del input arma el array respuesta[idPregunta] que lee el controlador-->
                     <input type="hidden" name="respuesta[<?php echo $idPregunta; ?>]" class="input-valor" value="">
                 </div>
 
