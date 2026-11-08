@@ -53,7 +53,7 @@
                     include_once 'tarjetas.php';
                     TarjetasDocumentos::mostrar($es_admin); 
                 ?>
-                 //este aviso lo muestra el js cuando el filtro no encuentra nada
+                 <!--este aviso lo muestra el js cuando el filtro no encuentra nada-->
                 <p id="sinResultados" class="text-muted d-none">No se encontraron documentos.</p>
             </div>
         </div>
