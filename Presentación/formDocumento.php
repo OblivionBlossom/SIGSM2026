@@ -65,7 +65,7 @@ if (!empty($_GET['nombre'])) {
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <div class="card border-light shadow-sm">
-                    //Usamos la variable $color 
+                    <!--Usamos la variable $color -->
                     <div class="card-header <?php echo $color; ?> p-3">
                          <h5 class="mb-0 fw-bold d-flex align-items-center">
                             <img src="logoHospi.jpg" alt="Hospital" class="me-2" style="height: 24px; width: auto; object-fit: contain;">
@@ -73,9 +73,9 @@ if (!empty($_GET['nombre'])) {
                          </h5>
                     </div>
                     <div class="card-body p-4">
-                        //el enctype es obligatorio para que el pdf se pueda subir
+                        <!--el enctype es obligatorio para que el pdf se pueda subir-->
                         <form id="formDocumentos" action="" method="POST" enctype="multipart/form-data">
-                            //guarda la ruta del pdf actual, así al modificar sin subir otro no se pierde
+                            <!--guarda la ruta del pdf actual, así al modificar sin subir otro no se pierde-->
                             <input type="hidden" name="rutaActual" value="<?php echo htmlspecialchars($rutapdf); ?>">
                             <div class="mb-3">
                                 <label class="form-label text-dark fw-bold small">Nombre de Documento</label>
