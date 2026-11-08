@@ -51,7 +51,7 @@ if ($esAdmin) {
                     <a class="btn btn-link text-dark text-decoration-none fw-medium" href="adminEncuestas.php">Encuestas</a>
                 </div>
                 <?php if ($esAdmin) { ?>
-                //la opción de alta de usuarios solo aparece para administradores
+                <!--la opción de alta de usuarios solo aparece para administradores-->
                 <div class="<?php echo $columna; ?>">
                     <a class="btn btn-link text-dark text-decoration-none fw-medium" href="formUsuarios.php">Alta de usuarios</a>
                 </div>
@@ -59,7 +59,7 @@ if ($esAdmin) {
                 <div class="<?php echo $columna; ?> d-flex justify-content-center">
                     <div class="dropdown">
                         <a class="btn btn-light border d-flex align-items-center text-dark text-decoration-none px-3 py-1 rounded dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            //nombre del usuario logueado, escapado por si trae caracteres raros
+                            <!--nombre del usuario logueado, escapado por si trae caracteres raros-->
                             <span class="fw-bold me-2"><?php echo htmlspecialchars($_SESSION["usuario"]); ?></span>
                             <i class="bi bi-person-circle fs-2 text-dark"></i>
                         </a>
@@ -97,7 +97,7 @@ if ($esAdmin) {
                 include 'tarjetas.php';
                 TarjetasDocumentos::mostrar($es_admin); 
             ?>
-             //este aviso lo muestra el js cuando el filtro no encuentra nada
+             <!--este aviso lo muestra el js cuando el filtro no encuentra nada-->
              <p id="sinResultados" class="text-muted d-none">No se encontraron documentos.</p>
             <div>
                 <a href="formDocumento.php" class="btn text-white fw-bold px-4 py-2 d-inline-flex align-items-center gap-2 text-decoration-none" style="background-color: #6c9bc2;">
